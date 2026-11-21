@@ -14,7 +14,7 @@ export function SiteHeader({ tone }: { tone: 'dark' | 'light' }) {
           )}
           style={{ '--d': '0.4s' } as React.CSSProperties}
         >
-          <MoraineMark />
+          <LogoMark />
           {site.name}
         </a>
         <a
@@ -40,8 +40,8 @@ export function SiteHeader({ tone }: { tone: 'dark' | 'light' }) {
   )
 }
 
-/** A tiny glacial-ridge mark: three stacked lines stepping down. */
-function MoraineMark() {
+/** A small abstract mark: three stacked lines stepping down. */
+function LogoMark() {
   return (
     <svg
       aria-hidden

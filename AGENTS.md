@@ -4,7 +4,7 @@ This document describes the project for developers and AI agents working on this
 
 ## Project Overview
 
-A single-page landing site for **Moraine Studio**, a small new architecture practice. It has a full-screen animated hero and a "Reach us" contact section (mailto + copy-to-clipboard). There is no backend, database or form handling — contact is by email only, by design.
+A single-page landing site for **Dari Studios**, a small new architecture practice. It has a full-screen animated hero and a "Reach us" contact section (mailto + copy-to-clipboard). There is no backend, database or form handling — contact is by email only, by design.
 
 All editable content (firm name, email, phone, location, headline, intro, services, which hero look is shown, and whether the look toggle appears) lives in `src/site.config.ts`. Keep it that way: new copy should be added to the config, not hard-coded in components.
 
@@ -22,7 +22,7 @@ All editable content (firm name, email, phone, location, headline, intro, servic
 
 - Animations are CSS-only and animate `transform`, `opacity` and (one-off) `clip-path`. Stagger is driven by a `--d` CSS variable set inline.
 - Blobs use soft `radial-gradient(closest-side, …)` fills instead of `filter: blur()` to keep the infinite drift cheap.
-- The email placeholder is `hello@morainestudio.com`; the owner is expected to replace it.
+- The contact email is `hello@dari-arch.studio`.
 
 ### Tech Stack
 
