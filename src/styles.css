@@ -252,6 +252,59 @@ code {
 }
 
 /* ------------------------------------------------------------------ */
+/* Hero slideshow: faint, slow-crossfading mood photos behind the      */
+/* aperture hero's color wash. Deliberately subtle — a hint of depth,  */
+/* not a photo gallery.                                                */
+/* ------------------------------------------------------------------ */
+
+.hero-slideshow {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  opacity: 0.4;
+  filter: saturate(0.75) brightness(0.85);
+}
+
+.hero-slideshow-slide {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  opacity: 0;
+  animation: hero-slideshow-cycle calc(var(--count) * 5s) ease-in-out infinite;
+  animation-delay: calc(var(--i) * -5s);
+}
+
+@keyframes hero-slideshow-cycle {
+  0% {
+    opacity: 0;
+  }
+  3% {
+    opacity: 1;
+  }
+  17% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-slideshow-slide {
+    animation: none !important;
+    opacity: 0 !important;
+  }
+  .hero-slideshow-slide:first-child {
+    opacity: 1 !important;
+  }
+}
+
+/* ------------------------------------------------------------------ */
 /* Look 1 — Aperture: a slit of light opens into a warm gradient       */
 /* ------------------------------------------------------------------ */
 

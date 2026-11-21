@@ -1,5 +1,6 @@
 import { HeroCopy } from './hero-copy'
 import { SiteHeader } from './site-header'
+import { HeroSlideshow } from './hero-slideshow'
 
 /**
  * Look 1 — Aperture.
@@ -9,12 +10,13 @@ import { SiteHeader } from './site-header'
 export function ApertureHero() {
   return (
     <section className="relative isolate min-h-svh overflow-hidden bg-ink text-paper">
+      <HeroSlideshow />
       <div
         aria-hidden
         className="aperture-light -z-10"
         style={{
           background:
-            'linear-gradient(160deg, oklch(0.32 0.04 48) 0%, var(--ink) 65%)',
+            'linear-gradient(160deg, oklch(0.32 0.04 48 / 0.9) 0%, oklch(0.2 0.01 60 / 0.86) 65%)',
         }}
       >
         <div
