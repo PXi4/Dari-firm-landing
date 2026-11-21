@@ -22,7 +22,7 @@ export function HeroCopy({
         )}
         style={delay(start)}
       >
-        Architecture &amp; Interiors — Est. {site.founded}
+        Architecture Studio — Est. {site.founded}
       </p>
 
       <h1 className="font-display text-[clamp(3.4rem,10vw,9rem)] leading-[0.9] tracking-[-0.02em]">

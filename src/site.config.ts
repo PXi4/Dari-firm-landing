@@ -23,11 +23,11 @@ export const site = {
   location: 'Cologne, Germany',
 
   /** Hero headline. The second line is set in italics. */
-  headline: ['Rooms shaped', 'by daylight.'],
+  headline: ['Designed to', 'actually live in.'],
 
   /** One or two sentences under the headline. */
   intro:
-    'An independent practice designing residential and commercial projects — drawn by hand, built with honest materials, and tuned to the light of each site.',
+    'A small practice handling residential and commercial projects from first sketch to final walkthrough.',
 
   /** Year the practice started, used in the small hero label. */
   founded: '2026',

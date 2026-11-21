@@ -113,7 +113,7 @@ export function ContactSection() {
           <p>
             © {new Date().getFullYear()} {site.name}
           </p>
-          <p>Architecture &amp; Interiors</p>
+          <p>Architecture Studio</p>
         </div>
       </footer>
     </section>
